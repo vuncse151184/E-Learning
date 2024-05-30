@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DXU-3A - Register – wrong validation</title>
+
+    <!-- Favicon -->
+    <!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Global Compulsory (Do not remove)-->
+    <link rel="stylesheet" href="../css/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="../css/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+
+    <!-- Page CSS Implementing Plugins (Remove the plugin CSS here if site does not use that feature)-->
+    <link rel="stylesheet" href="../css/select2/select2.css" />
+
+    <!-- Template Style -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Custom Style for PrimeDX -->
+    <link rel="stylesheet" href="../css/custom.css" />
+
+  </head>
+<body>
+
+<!--=================================
+header -->
+<header class="header">
+  <nav class="navbar navbar-static-top navbar-expand-lg header-sticky head-nav">
+    <div class="container-fluid">
+      <button id="nav-icon4" type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <a class="navbar-brand logo" href="#!" title="PrimeDX">
+        <img class="img-fluid" src="../img/logo.png" alt="PrimeDX">
+      </a>
+      <div class="navbar-collapse collapse justify-content-start">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#!" title="求人を見る">求人を見る</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!" title="DXコンテンツ">DXコンテンツ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="add-listing">
+        <a class="btn btn-md white-btn" href="#!" title="DX人材を探す方はこちら">DX人材を探す方はこちら</a>
+        <a class="btn btn-md yellow-btn" href="#!" title="無料登録はこちら">無料登録はこちら</a>
+        <div class="login d-inline-block mr-4">
+          <a href="#">ログイン</a>
+        </div>
+        </div>
+    </div>
+  </nav>
+</header>
+  <!--=================================
+  header -->
+
+<!--=================================
+Login -->
+<section class="space-ptb mb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="login-register">
+          <div class="section-title">
+           <h4 class="text-center">新規登録</h4>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active">
+              <!-- Form -->
+              <form class="mt-4">
+                <!-- Form Block -->
+                <div class="form-row mb-5 frm-block">
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="username">氏名 <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="username">
+                    <small class="form-text text-error">氏名が入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="furigana_name">ふりがな <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="furigana_name">
+                    <small class="form-text text-error">氏名ふりがなが入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="email">メールアドレス <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="email">
+                    <small class="form-text text-error">メールアドレスが入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="confirm_email">メールアドレス(確認用) <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="confirm_email">
+                    <small class="form-text text-error">メールアドレス(確認用) が入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="password">パスワード <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="password">
+                    <small class="form-text text-error">パスワードが入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="confirm_password">パスワード(確認用) <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="confirm_password">
+                    <small class="form-text text-error">パスワード（確認用）が入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label>性別 <span class="red-required">必須</span></label>
+                    <div class="radio-lst">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+                        <label class="form-check-label" for="male">男性</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+                        <label class="form-check-label" for="female">女性</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="birthday">生年月日 <span class="red-required">必須</span></label>
+                    <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                      <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" placeholder="2020/09/09">
+                      <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                      </div>
+                    </div>
+                    <small class="form-text text-error">生年月日を選択しください。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5">
+                    <label for="phone_num">電話番号 <span class="red-required">必須</span></label>
+                    <input type="text" class="form-control" id="phone_num">
+                    <small class="form-text text-error">電話番号が入力されていません。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-6 mb-5 select-border">
+                    <label for="sector">都道府県 <span class="red-required">必須</span></label>
+                    <select class="form-control basic-select">
+                      <option value="value 01" selected="selected">北海道</option>
+                      <option value="value 02">京都府</option>
+                      <option value="value 03">長野県</option>
+                      <option value="value 04">沖縄県</option>
+                      <option value="value 05">埼玉県</option>
+                      <option value="value 06">東京都</option>
+                    </select>
+                    <small class="form-text text-error">都道府県を選択しください。</small>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-12">
+                    <label for="school">最終学歴（学校名）</label>
+                    <input type="text" class="form-control" id="school" placeholder="早稲田大学法学部">
+                  </div>
+                  <!-- End Form group -->
+                </div>
+                <!-- End Form Block -->
+
+                <!-- Form Block -->
+                <div class="form-row mb-5 frm-block">
+                  <p class="frm-txt">経験の多い、または 自信のある【職種・スキル】を最大３つまで選んでください。 <span class="red-required">必須</span></p>
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-01" name="skill">
+                      <label class="custom-control-label" for="skill-01">データサイエンティスト</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-02" name="skill">
+                      <label class="custom-control-label" for="skill-02">AIエンジニア</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-03" name="skill" checked>
+                      <label class="custom-control-label" for="skill-03">UXデザイナー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-04" name="skill">
+                      <label class="custom-control-label" for="skill-04">プロジェクトマネージャー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-05" name="skill" checked>
+                      <label class="custom-control-label" for="skill-05">アーキテクト</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+                  
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-06" name="skill">
+                      <label class="custom-control-label" for="skill-06">エンジニア</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-07" name="skill">
+                      <label class="custom-control-label" for="skill-07">プログラマ</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-08" name="skill">
+                      <label class="custom-control-label" for="skill-08">経営企画</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-09" name="skill">
+                      <label class="custom-control-label" for="skill-09">ビジネスデザイナー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-10" name="skill">
+                      <label class="custom-control-label" for="skill-10">コンサルティング</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-11" name="skill">
+                      <label class="custom-control-label" for="skill-11">事業開発/事業企画・マネジメント</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-12" name="skill">
+                      <label class="custom-control-label" for="skill-12">広報・PR</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-13" name="skill">
+                      <label class="custom-control-label" for="skill-13">WEBディレクター</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-14" name="skill">
+                      <label class="custom-control-label" for="skill-14">専門職（士業など）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-15" name="skill">
+                      <label class="custom-control-label" for="skill-15">人事</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-16" name="skill">
+                      <label class="custom-control-label" for="skill-16">営業・営業企画</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-17" name="skill">
+                      <label class="custom-control-label" for="skill-17">法務</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-18" name="skill">
+                      <label class="custom-control-label" for="skill-18">マーケティング全般</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-19" name="skill">
+                      <label class="custom-control-label" for="skill-19">WEBマーケティング・広告運用</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-20" name="skill">
+                      <label class="custom-control-label" for="skill-20">経理/財務</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-21" name="skill">
+                      <label class="custom-control-label" for="skill-21">監査</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-22" name="skill">
+                      <label class="custom-control-label" for="skill-22">金融関連</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-23" name="skill">
+                      <label class="custom-control-label" for="skill-23">商品企画・商品開発</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="skill-24" name="skill">
+                      <label class="custom-control-label" for="skill-24">そのほか技術系職種</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+                </div>
+                <!-- End Form Block -->
+
+                <!-- Form Block -->
+                <div class="form-row mb-5 frm-block">
+                  <p class="frm-txt">希望職種 <span class="red-required">必須</span></p>
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-01" name="job" checked>
+                      <label class="custom-control-label" for="job-01">データサイエンティスト</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-02" name="job">
+                      <label class="custom-control-label" for="job-02">AIエンジニア</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-03" name="job" checked>
+                      <label class="custom-control-label" for="job-03">UXデザイナー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-04" name="job">
+                      <label class="custom-control-label" for="job-04">プロジェクトマネージャー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-05" name="job" checked>
+                      <label class="custom-control-label" for="job-05">アーキテクト</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+                  
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-06" name="job">
+                      <label class="custom-control-label" for="job-06">エンジニア</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-07" name="job" checked>
+                      <label class="custom-control-label" for="job-07">プログラマ</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-08" name="job">
+                      <label class="custom-control-label" for="job-08">経営企画</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-09" name="job">
+                      <label class="custom-control-label" for="job-09">ビジネスデザイナー</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-10" name="job">
+                      <label class="custom-control-label" for="job-10">コンサルティング</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-11" name="job">
+                      <label class="custom-control-label" for="job-11">事業開発/事業企画・マネジメント</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-12" name="job">
+                      <label class="custom-control-label" for="job-12">広報・PR</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-13" name="job">
+                      <label class="custom-control-label" for="job-13">WEBディレクター</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-14" name="job">
+                      <label class="custom-control-label" for="job-14">専門職（士業など）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-15" name="job">
+                      <label class="custom-control-label" for="job-15">人事</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-16" name="job">
+                      <label class="custom-control-label" for="job-16">営業・営業企画</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-17" name="job">
+                      <label class="custom-control-label" for="job-17">法務</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-18" name="job">
+                      <label class="custom-control-label" for="job-18">マーケティング全般</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-19" name="job">
+                      <label class="custom-control-label" for="job-19">WEBマーケティング・広告運用</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-20" name="job">
+                      <label class="custom-control-label" for="job-20">経理/財務</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-21" name="job">
+                      <label class="custom-control-label" for="job-21">監査</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-22" name="job">
+                      <label class="custom-control-label" for="job-22">金融関連</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-23" name="job">
+                      <label class="custom-control-label" for="job-23">商品企画・商品開発</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="job-24" name="job">
+                      <label class="custom-control-label" for="job-24">そのほか技術系職種</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+                </div>
+                <!-- End Form Block -->
+
+                <!-- Form Block -->
+                <div class="form-row mb-5 frm-block">
+                  <p class="frm-txt">希望の働き方 <span class="red-required">必須</span></p>
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-01" name="style" checked>
+                      <label class="custom-control-label" for="style-01">業務委託（平日の週1稼働）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-02" name="style">
+                      <label class="custom-control-label" for="style-02">業務委託（平日の週2稼働）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-03" name="style" checked>
+                      <label class="custom-control-label" for="style-03">業務委託（平日の週3稼働）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-04" name="style">
+                      <label class="custom-control-label" for="style-04">業務委託（平日の週4稼働）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-05" name="style" checked>
+                      <label class="custom-control-label" for="style-05">業務委託（平日の週5稼働）</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-06" name="style">
+                      <label class="custom-control-label" for="style-06">在宅勤務／リモートワーク</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+
+                  <!-- Form group -->
+                  <div class="form-group col-md-4">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="style-07" name="style">
+                      <label class="custom-control-label" for="style-07">月2〜3回のミーティングは可</label>
+                    </div>
+                  </div>
+                  <!-- End Form group -->
+                </div>
+                <!-- End Form Block -->
+
+                <!-- Form Block -->
+                <div class="form-row mb-5 frm-block form-web">
+                  <p class="frm-txt">希望勤務地 <span class="red-required">必須</span></p>
+
+                  <!-- Accordion Block -->
+                  <div class="accordion user-accordion" id="accordion">
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-one">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-one" aria-expanded="true" aria-controls="accordion-one">北海道・東北 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-one" class="collapse form-row" aria-labelledby="accordion-title-one" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-01" name="pos" checked>
+                            <label class="custom-control-label" for="pos-01-01">北海道</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-02" name="pos">
+                            <label class="custom-control-label" for="pos-01-02">青森県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-03" name="pos" checked>
+                            <label class="custom-control-label" for="pos-01-03">岩手県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-04" name="pos">
+                            <label class="custom-control-label" for="pos-01-04">宮城県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-05" name="pos" checked>
+                            <label class="custom-control-label" for="pos-01-05">秋田県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-06" name="pos">
+                            <label class="custom-control-label" for="pos-01-06">山形県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-07" name="pos">
+                            <label class="custom-control-label" for="pos-01-07">福島県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-two">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-two" aria-expanded="false" aria-controls="accordion-two">関東 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-two" class="collapse form-row" aria-labelledby="accordion-title-two" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-01" name="pos">
+                            <label label class="custom-control-label" for="pos-02-01">茨城県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-02" name="pos">
+                            <label class="custom-control-label" for="pos-02-02">栃木県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-03" name="pos">
+                            <label class="custom-control-label" for="pos-02-03">群馬県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-04" name="pos">
+                            <label class="custom-control-label" for="pos-02-04">埼玉県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-05" name="pos">
+                            <label class="custom-control-label" for="pos-02-05">千葉県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-06" name="pos">
+                            <label class="custom-control-label" for="pos-02-06">東京都</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-07" name="pos">
+                            <label class="custom-control-label" for="pos-02-07">神奈川県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-three">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-three" aria-expanded="false" aria-controls="accordion-three">甲信越・北陸 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-three" class="collapse form-row" aria-labelledby="accordion-title-three" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-01" name="pos">
+                          <label class="custom-control-label" for="pos-03-01">新潟県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-02" name="pos">
+                          <label class="custom-control-label" for="pos-03-02">富山県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-03" name="pos">
+                          <label class="custom-control-label" for="pos-03-03">石川県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-04" name="pos">
+                          <label class="custom-control-label" for="pos-03-04">福井県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-05" name="pos">
+                          <label class="custom-control-label" for="pos-03-05">山梨県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-06" name="pos">
+                          <label class="custom-control-label" for="pos-03-06">長野県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-four">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-four" aria-expanded="false" aria-controls="accordion-four">東海 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-four" class="collapse form-row" aria-labelledby="accordion-title-four" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-04-01" name="pos">
+                          <label class="custom-control-label" for="pos-04-01">岐阜県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-04-02" name="pos">
+                          <label class="custom-control-label" for="pos-04-02">静岡県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-04-03" name="pos">
+                          <label class="custom-control-label" for="pos-04-03">愛知県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-04-04" name="pos">
+                          <label class="custom-control-label" for="pos-04-04">三重県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-five">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-five" aria-expanded="false" aria-controls="accordion-five">関西 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-five" class="collapse form-row" aria-labelledby="accordion-title-five" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-01" name="pos">
+                          <label class="custom-control-label" for="pos-05-01">滋賀県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-02" name="pos">
+                          <label class="custom-control-label" for="pos-05-02">京都府</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-03" name="pos">
+                          <label class="custom-control-label" for="pos-05-03">大阪府</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-04" name="pos">
+                          <label class="custom-control-label" for="pos-05-04">兵庫県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-05" name="pos">
+                          <label class="custom-control-label" for="pos-05-05">奈良県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-05-06" name="pos">
+                          <label class="custom-control-label" for="pos-05-06">和歌山県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-six">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-six" aria-expanded="false" aria-controls="accordion-six">中国 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-six" class="collapse form-row" aria-labelledby="accordion-title-six" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-06-01" name="pos">
+                            <label class="custom-control-label" for="pos-06-01">鳥取県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-06-02" name="pos">
+                            <label class="custom-control-label" for="pos-06-02">島根県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-06-03" name="pos">
+                            <label class="custom-control-label" for="pos-06-03">岡山県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-06-04" name="pos">
+                            <label class="custom-control-label" for="pos-06-04">広島県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-06-05" name="pos">
+                            <label class="custom-control-label" for="pos-06-05">山口県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-seven">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-seven" aria-expanded="false" aria-controls="accordion-seven">四国 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-seven" class="collapse form-row" aria-labelledby="accordion-title-seven" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-07-01" name="pos">
+                          <label class="custom-control-label" for="pos-07-01">徳島県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-07-02" name="pos">
+                          <label class="custom-control-label" for="pos-07-02">香川県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-07-03" name="pos">
+                          <label class="custom-control-label" for="pos-07-03">愛媛県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-07-04" name="pos">
+                          <label class="custom-control-label" for="pos-07-04">高知県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-eight">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-eight" aria-expanded="false" aria-controls="accordion-eight">九州・沖縄 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-eight" class="collapse form-row" aria-labelledby="accordion-title-eight" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-01" name="pos">
+                          <label class="custom-control-label" for="pos-08-01">福岡県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-02" name="pos">
+                          <label class="custom-control-label" for="pos-08-02">佐賀県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-03" name="pos">
+                          <label class="custom-control-label" for="pos-08-03">長崎県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-04" name="pos">
+                          <label class="custom-control-label" for="pos-08-04">熊本県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-05" name="pos">
+                          <label class="custom-control-label" for="pos-08-05">大分県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-06" name="pos">
+                          <label class="custom-control-label" for="pos-08-06">宮崎県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-07" name="pos">
+                          <label class="custom-control-label" for="pos-08-07">鹿児島県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-08-08" name="pos">
+                          <label class="custom-control-label" for="pos-08-08">沖縄県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-nine">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-nine" aria-expanded="false" aria-controls="accordion-nine">在宅 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-nine" class="collapse form-row" aria-labelledby="accordion-title-nine" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-09-01" name="pos">
+                            <label class="custom-control-label" for="pos-09-01">フルリモート</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-09-02" name="pos">
+                            <label class="custom-control-label" for="pos-09-02">一部リモート</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+                  </div>
+                  <!-- End Accordion Block -->
+                </div>
+                <!-- End Form Block -->
+
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <p class="mt-1">※ <a href="#!" title="個人情報取り扱い">個人情報取り扱い</a> について同意の上、送信内容を確認してください。</p>
+                  </div>
+                  <div class="col-md-6">
+                    <a class="btn yellow-btn btn-block mb-3" href="#!" title="以上の内容で登録する">以上の内容で登録する</a>
+                  </div>
+                  <div class="col-md-6 text-md-right mt-2 text-center">
+                    <p>Already registered? <a href="#"> Sign in here</a></p>
+                  </div>
+                </div>
+              </form>
+              <!-- End Form -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+Login -->
+
+<!--=================================
+footer-->
+<footer class="footer bg-light">
+  <div class="position-relative">
+    <svg class="footer-shape"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="100%" height="85px">
+      <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M-0.000,-0.001 L1923.000,-0.001 L1923.000,84.999 C1608.914,41.669 1279.532,19.653 962.500,19.000 C635.773,18.326 323.692,40.344 -0.000,84.999 C-0.000,-83.334 -0.000,168.332 -0.000,-0.001 Z"/>
+      </svg>
+    </div>
+    <div class="container pt-5">
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DX人材の方</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="求人を見る">求人を見る</a></li>
+              <li><a href="#!" title="WEBレジュメ">WEBレジュメ</a></li>
+              <li><a href="#!" title="気になる">気になる</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DX人材をお探しの方</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="企業情報">企業情報</a></li>
+              <li><a href="#!" title="求人登録">求人登録</a></li>
+              <li><a href="#!" title="応募者データ管理">応募者データ管理</a></li>
+              <li><a href="#!" title="求人データ管理">求人データ管理</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DXコンテンツ</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="ブログ">ブログ</a></li>
+              <li><a href="#!" title="テンプレート資料">テンプレート資料</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <button type="submit" class="btn yellow-btn btn-md btn-255">お問い合わせ</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-dark mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="d-flex justify-content-md-start justify-content-center">
+              <ul class="list-unstyled d-flex mb-0">
+                <li><a href="#!" title="利用規約">利用規約</a></li>
+                <li><a href="#!" title="プライバシーポリシー">プライバシーポリシー</a></li>
+                <li><a href="#!" title="お問い合わせ">お問い合わせ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-right mt-4 mt-md-0">
+            <p class="mb-0 copy-right"> &copy;Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="https://primestyle.co.jp" title="Primegroup" target="_blank"> Primegroup </a>. All Rights Reserved </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+<!--=================================
+footer-->
+
+<!--=================================
+Back To Top-->
+   <div id="back-to-top" class="back-to-top">
+     <i class="fas fa-angle-up"></i>
+   </div>
+<!--=================================
+Back To Top-->
+
+<!--=================================
+Javascript -->
+
+    <!-- JS Global Compulsory (Do not remove)-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper/popper.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+
+    <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+    <script src="../js/select2/select2.full.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+          $('#datetimepicker1').datetimepicker({
+            format: 'L',
+            locale: 'ja'
+          });
+      });
+    </script>
+
+    <!-- Template Scripts (Do not remove)-->
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>

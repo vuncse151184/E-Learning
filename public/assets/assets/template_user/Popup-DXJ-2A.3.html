@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Popup-DXJ-2A.3</title>
+
+    <!-- Favicon -->
+    <!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Global Compulsory (Do not remove)-->
+    <link rel="stylesheet" href="../css/font-awesome/all.min.css" />
+    <link rel="stylesheet" href="../css/flaticon/flaticon.css" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+
+    <!-- Page CSS Implementing Plugins (Remove the plugin CSS here if site does not use that feature)-->
+    <link rel="stylesheet" href="../css/select2/select2.css" />
+
+    <!-- Template Style -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Custom Style for PrimeDX -->
+    <link rel="stylesheet" href="../css/custom.css" />
+
+</head>
+<body>
+
+<!--=================================
+header -->
+<header class="header">
+  <nav class="navbar navbar-static-top navbar-expand-lg header-sticky head-nav">
+    <div class="container-fluid">
+      <button id="nav-icon4" type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <a class="navbar-brand logo" href="#!" title="PrimeDX">
+        <img class="img-fluid" src="../img/logo.png" alt="PrimeDX">
+      </a>
+      <div class="navbar-collapse collapse justify-content-start">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#!" title="求人を見る">求人を見る</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!" title="DXコンテンツ">DXコンテンツ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="add-listing">
+        <a class="btn btn-md white-btn" href="#!" title="DX人材を探す方はこちら">DX人材を探す方はこちら</a>
+        <a class="btn btn-md yellow-btn" href="#!" title="無料登録はこちら">無料登録はこちら</a>
+        <div class="login d-inline-block mr-4">
+          <a href="#">ログイン</a>
+        </div>
+        </div>
+    </div>
+  </nav>
+</header>
+  <!--=================================
+  header -->
+
+<!--=================================
+banner -->
+<section class="header-inner header-inner-big bg-holder text-white" style="background-image: url(../img/job-banner.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="job-search-field">
+          <div class="job-search-item">
+            <form class="form row align-flex-end">
+              <div class="col-lg-3">
+                <label>職種</label>
+                <div class="form-group left-icon">
+                  <select class="form-control basic-select">
+                    <option value="value 01" selected="selected">お選びください</option>
+                    <option value="value 02">option 01</option>
+                    <option value="value 03">option 02</option>
+                    <option value="value 04">option 03</option>
+                    <option value="value 05">option 04</option>
+                    <option value="value 06">option 05</option>
+                  </select>
+                <i class="fa fa-suitcase"></i> </div>
+              </div>
+              <div class="col-lg-3">
+                <label>働き方</label>
+                <div class="form-group left-icon">
+                  <select class="form-control basic-select">
+                    <option value="value 01" selected="selected">お選びください</option>
+                    <option value="value 02">業務委託（平日の週1稼働）</option>
+                    <option value="value 03">業務委託（平日の週2稼働）</option>
+                    <option value="value 04">業務委託（平日の週3稼働）</option>
+                    <option value="value 05">業務委託（平日の週4稼働）</option>
+                    <option value="value 06">業務委託（平日の週5稼働）</option>
+                    <option value="value 07">正社員 正社員（時短）</option>
+                    <option value="value 08">在宅勤務／リモートワーク</option>
+                    <option value="value 09">月2〜3回のミーティングは可</option>
+                  </select>
+                <i class="fa fa-clock" aria-hidden="true"></i> </div>
+              </div>
+              <div class="col-lg-4">
+                <label>フリーワード</label>
+                <div class="form-group left-icon">
+                  <input type="text" class="form-control" name="job_title" placeholder="例：WEBプログラマー">
+                <i class="fas fa-search"></i> </div>
+              </div>
+              <div class="col-lg-2 col-sm-12">
+                <div class="form-group form-action">
+                  <button type="submit" class="btn yellow-btn mt-0 w-100"><i class="fas fa-search-location"></i> 検索</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+banner -->
+
+
+
+<!--=================================
+job-grid -->
+<section class="space-ptb">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <div class="job-detail job-detail-bdr">
+          <div class="mb-4">
+            <img class="img-fluid" src="../img/job-detail.png" alt="">
+          </div>
+          <h5 class="mb-3 mb-md-4">求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人
+            案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名</h5>
+          <p>求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人案件名求人
+            案件名求人案件名求人案件名求人案件名求人案件名求人案件名件名求人案件名件名求人案件名件名求人案
+            件名求人案件名件名求人案件名件名求人案件名件名求人案件名件名求人案件名件名求人案件名件名件名求
+            人案件名</p>
+        </div>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">職種</h5>
+          <p>営業・営業企画</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">仕事内容</h5>
+          <p>コールセンター（社内、テレワーク）のスーパーバイザー（営業マネー<br>ジャー）のポジションで動いてくださる方を募集しています ・在宅アポ<br>インターのテレワークの設定 ・アポインターの採用 ・アポインターの<br>教育 ・アポインターのマネジメント（評価の低い人材の入れ替え） </p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">働き方</h5>
+          <p>業務委託（平日の週2稼働）</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">得られるスキル</h5>
+          <p>体制が整わない中で自ら作っていく推進経験<br>メールマーケティングの知見<br>集客力のあるLPの作成経験</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">魅力</h5>
+          <p>週2～の案件のためパラレルキャリアを実現したい方にお勧めの案件です</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">給与・報酬</h5>
+          <p>週2～/月額20万円～</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">勤務地</h5>
+          <p>東京都</p>
+        </div>
+        <hr>
+        <div class="job-detail">
+          <h5 class="mb-3 mb-md-4">必要なスキル・経験</h5>
+          <p>＜必須＞
+            ・営業マネージャー経験
+            ・テレアポスタッフの管理経験
+            ・テレアポスタッフを採用経験（アルバイト）</p>
+        </div>
+        <hr>
+        <div class="col-md-12 mt-5">
+          <a class="btn yellow-btn" href="#!" title="この仕事をエントリーする">この仕事をエントリーする</a>
+        </div>
+
+      </div>
+      <!--=================================
+      sidebar -->
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="sidebar mb-0">
+          <h5 class="job-side-title">おすすめ求人</h5>
+
+          <div class="job-side-detail">
+            <div class="mb-2">
+              <img class="img-fluid" src="../img/job-detail.png" alt="">
+            </div>
+            <p>
+              <a href="#!" title="">案件名案件名案件名案件名案件名案件名案件名案
+                件名案件名案件名案件名案件名案件名案件名案件</a>
+            </p>
+          </div>
+          <div class="job-side-detail">
+            <div class="mb-2">
+              <img class="img-fluid" src="../img/job-detail.png" alt="">
+            </div>
+            <p>
+              <a href="#!" title="">案件名案件名案件名案件名案件名案件名案件名案
+                件名案件名案件名案件名案件名案件名案件名案件</a>
+            </p>
+          </div>
+          <div class="job-side-detail">
+            <div class="mb-2">
+              <img class="img-fluid" src="../img/job-detail.png" alt="">
+            </div>
+            <p>
+              <a href="#!" title="">案件名案件名案件名案件名案件名案件名案件名案
+                件名案件名案件名案件名案件名案件名案件名案件</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--=================================
+      sidebar -->
+    </div>
+    <!-- Popup Button -->
+    <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-expand pr-2"></i>Open Popup</a>
+    <!-- End Popup Button -->
+  </div>
+</section>
+<!--=================================
+job-grid -->
+
+<!--=================================
+feature -->
+<section class="feature-info-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-lg-0 mb-4 min-banner-item">
+        <div class="feature-info feature-info-02 p-4 p-lg-5 bg-blue">
+          <div class="feature-info-icon mb-3 mb-sm-0 text-white">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="feature-info-content text-white pl-sm-4 pl-0">
+            <h5>DX人材の方はこちら</h5>
+          </div>
+          <a class="ml-auto align-self-center" href="#!">今すぐ応募する<i class="fas fa-long-arrow-alt-right"></i> </a>
+        </div>
+      </div>
+      <div class="col-lg-6 min-banner-item">
+        <div class="feature-info feature-info-02 p-4 p-lg-5 bg-blue-light">
+          <div class="feature-info-icon mb-3 mb-sm-0 text-white">
+            <i class="flaticon-job-3"></i>
+          </div>
+          <div class="feature-info-content text-white pl-sm-4 pl-0">
+            <h5>DX人材を探すの方はこちら</h5>
+          </div>
+          <a class="ml-auto align-self-center" href="#!">求人を掲載<i class="fas fa-long-arrow-alt-right"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=================================
+feature -->
+
+<!--=================================
+footer-->
+<footer class="footer bg-light">
+  <div class="position-relative">
+    <svg class="footer-shape"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="100%" height="85px">
+      <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M-0.000,-0.001 L1923.000,-0.001 L1923.000,84.999 C1608.914,41.669 1279.532,19.653 962.500,19.000 C635.773,18.326 323.692,40.344 -0.000,84.999 C-0.000,-83.334 -0.000,168.332 -0.000,-0.001 Z"/>
+      </svg>
+    </div>
+    <div class="container pt-5">
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DX人材の方</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="求人を見る">求人を見る</a></li>
+              <li><a href="#!" title="WEBレジュメ">WEBレジュメ</a></li>
+              <li><a href="#!" title="気になる">気になる</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DX人材をお探しの方</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="企業情報">企業情報</a></li>
+              <li><a href="#!" title="求人登録">求人登録</a></li>
+              <li><a href="#!" title="応募者データ管理">応募者データ管理</a></li>
+              <li><a href="#!" title="求人データ管理">求人データ管理</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+          <div class="footer-link">
+            <h5 class="text-dark mb-4">DXコンテンツ</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" title="ブログ">ブログ</a></li>
+              <li><a href="#!" title="テンプレート資料">テンプレート資料</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mt-5">
+          <button type="submit" class="btn yellow-btn btn-md btn-255">お問い合わせ</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom bg-dark mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="d-flex justify-content-md-start justify-content-center">
+              <ul class="list-unstyled d-flex mb-0">
+                <li><a href="#!" title="利用規約">利用規約</a></li>
+                <li><a href="#!" title="プライバシーポリシー">プライバシーポリシー</a></li>
+                <li><a href="#!" title="お問い合わせ">お問い合わせ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-right mt-4 mt-md-0">
+            <p class="mb-0 copy-right"> &copy;Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="https://primestyle.co.jp" title="Primegroup" target="_blank"> Primegroup </a>. All Rights Reserved </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+<!--=================================
+footer-->
+
+<!--=================================
+Back To Top-->
+   <div id="back-to-top" class="back-to-top">
+     <i class="fas fa-angle-up"></i>
+   </div>
+<!--=================================
+Back To Top-->
+
+<!--=================================
+Modal Popup -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header p-4">
+        <h5 class="mb-0 text-center">エントリーフォーム</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Col 12 -->
+        <div class="col-md-12">
+          <div class="section-title-02 mb-4">
+            <h6>Webレジュメ</h6>
+          </div>
+          <div>
+            <!-- Form -->
+            <form class="mt-4">
+              <!-- Form Block -->
+              <div class="form-row mb-5 frm-block form-web">
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label for="username">氏名</label>
+                    <p class="frm-show-data">山田太郎</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label for="furigana_name">ふりがな</label>
+                    <p class="frm-show-data">やまだ たろう</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label for="email">メールアドレス</label>
+                    <p class="frm-show-data">abcdef@website.com</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label for="phone_num">電話番号</label>
+                    <p class="frm-show-data">000-000-0000</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label>性別</label>
+                    <p class="frm-show-data">男性</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 mb-5">
+                    <label for="birthday">生年月日</label>
+                    <p class="frm-show-data">2020/09/09</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6 select-border">
+                    <label for="sector">都道府県</label>
+                    <p class="frm-show-data">京都府</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-6">
+                    <label for="school">最終学歴（学校名）</label>
+                    <p class="frm-show-data">早稲田大学法学部</p>
+                </div>
+                <!-- End Form group -->
+              </div>
+              <!-- End Form Block -->
+
+              <!-- Form Block -->
+              <div class="card mb-3">
+                <div class="card-body pb-2">
+                  <h6 class="font-weight-normal mb-4">経験の多い、または 自信のある【職種・スキル】を最大３つまで選んでください。</h6>
+                  <!-- Row -->
+                  <div class="row">
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_01" name="skill" disabled>
+                          <label for="skill_01" class="custom-control-label">データサイエンティスト</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_02" name="skill" disabled>
+                          <label for="skill_02" class="custom-control-label">AIエンジニア</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_03" name="skill" disabled>
+                          <label for="skill_03" class="custom-control-label">UXデザイナー</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_04" name="skill" disabled>
+                          <label for="skill_04" class="custom-control-label">プロジェクトマネージャー</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_05" name="skill" disabled>
+                          <label for="skill_05" class="custom-control-label">アーキテクト</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group mb-3">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="skill_06" name="skill" disabled>
+                          <label for="skill_06" class="custom-control-label">エンジニア</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Form Block -->
+
+              <!-- Form Block -->
+              <div class="card mb-3">
+                <div class="card-body pb-2">
+                  <h6 class="font-weight-normal mb-4">希望職種</h6>
+                  <!-- Row -->
+                  <div class="row">
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_01" name="job" disabled>
+                          <label for="job_01" class="custom-control-label">データサイエンティスト</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_02" name="job" disabled>
+                          <label for="job_02" class="custom-control-label">AIエンジニア</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_03" name="job" disabled>
+                          <label for="job_03" class="custom-control-label">UXデザイナー</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_04" name="job" disabled>
+                          <label for="job_04" class="custom-control-label">プロジェクトマネージャー</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_05" name="job" disabled>
+                          <label for="job_05" class="custom-control-label">アーキテクト</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="job_06" name="job" disabled>
+                          <label for="job_06" class="custom-control-label">エンジニア</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Form Block -->
+
+              <!-- Form Block -->
+              <div class="card mb-3">
+                <div class="card-body pb-2">
+                  <h6 class="font-weight-normal mb-4">希望の働き方</h6>
+                  <!-- Row -->
+                  <div class="row">
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_01" name="style" disabled>
+                          <label for="style_01" class="custom-control-label">業務委託（平日の週1稼働）</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_02" name="style" disabled>
+                          <label for="style_02" class="custom-control-label">業務委託（平日の週2稼働）</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_03" name="style" disabled>
+                          <label for="style_03" class="custom-control-label">業務委託（平日の週3稼働）</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_04" name="style" disabled>
+                          <label for="style_04" class="custom-control-label">業務委託（平日の週4稼働）</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_05" name="style" disabled>
+                          <label for="style_05" class="custom-control-label">業務委託（平日の週5稼働）</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+
+                    <!-- Col 04 -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" type="checkbox" id="style_04" name="style" disabled>
+                          <label for="style_04" class="custom-control-label">正社員</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Col 04 -->
+                  </div>
+                  <!-- End Row -->
+                </div>
+              </div>
+              <!-- End Form Block -->
+
+              <!-- Form Block -->
+              <div class="card mb-3">
+                <div class="card-body pb-2">
+                  <h6 class="font-weight-normal mb-4">希望勤務地</h6>
+                  <!-- Accordion Block -->
+                  <div class="accordion user-accordion" id="accordion">
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-one">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-one" aria-expanded="true" aria-controls="accordion-one">北海道・東北 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-one" class="collapse form-row" aria-labelledby="accordion-title-one" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-01" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-01">北海道</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-02" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-02">青森県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-03" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-03">岩手県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-04" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-04">宮城県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-05" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-05">秋田県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-06" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-06">山形県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-01-07" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-01-07">福島県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-two">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-two" aria-expanded="false" aria-controls="accordion-two">関東 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-two" class="collapse form-row" aria-labelledby="accordion-title-two" data-parent="#accordion">
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-01" name="pos" disabled>
+                            <label label class="custom-control-label" for="pos-02-01">茨城県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-02" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-02">栃木県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-03" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-03">群馬県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-04" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-04">埼玉県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-05" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-05">千葉県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-06" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-06">東京都</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+
+                        <!-- Form group -->
+                        <div class="form-group col-md-4">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="pos-02-07" name="pos" disabled>
+                            <label class="custom-control-label" for="pos-02-07">神奈川県</label>
+                          </div>
+                        </div>
+                        <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item">
+                      <!-- Accordion Title -->
+                      <div class="accordion-title" id="accordion-title-three">
+                        <p class="sub-group-txt collapsed" data-toggle="collapse" data-target="#accordion-three" aria-expanded="false" aria-controls="accordion-three">甲信越・北陸 <i class="fas fa-chevron-down fa-xs"></i></p>
+                      </div>
+                      <!-- End Accordion Title -->
+
+                      <!-- Accordion Cont -->
+                      <div id="accordion-three" class="collapse form-row" aria-labelledby="accordion-title-three" data-parent="#accordion">
+                        <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-01" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-01">新潟県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-02" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-02">富山県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-03" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-03">石川県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-04" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-04">福井県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-05" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-05">山梨県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+
+                      <!-- Form group -->
+                      <div class="form-group col-md-4">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="pos-03-06" name="pos" disabled>
+                          <label class="custom-control-label" for="pos-03-06">長野県</label>
+                        </div>
+                      </div>
+                      <!-- End Form group -->
+                      </div>
+                      <!-- End Accordion Cont -->
+                    </div>
+                    <!-- End Accordion Item -->
+                  </div>
+                  <!-- End Accordion Block -->
+                </div>
+              </div>
+              <!-- End Form Block -->
+
+              <!-- Form Block -->
+              <div class="form-row mb-5 frm-block form-web">
+                  <div class="col-md-12 mb-0">
+                      <div class="form-group">
+                          <label>ご質問や条件面などのご相談</label>
+                          <p class="frm-show-data">2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年3ヶ月 2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年 3ヶ月2年3ヶ月</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- End Form Block -->
+
+              <h4 class="mb-3">履歴書・職務経歴書登録</h4>
+
+              <!-- Form Block -->
+              <div class="form-row mb-5 frm-dashboard-block resum-registration">
+                <!-- Form group -->
+                <div class="form-group col-md-12 mb-2">
+                  <label class="mb-2 upload-title" for="school">履歴書</span></label>
+                  <p class="text-underline">C:\fake_path\file_name_3</p>
+                </div>
+                <!-- End Form group -->
+
+                <!-- Form group -->
+                <div class="form-group col-md-12 mb-2">
+                  <label class="mb-2 upload-title" for="school">職務経歴書</span></label>
+                  <p class="text-underline">C:\fake_path\file_name_3</p>
+                </div>
+                <!-- End Form group -->
+              </div>
+              <!-- End Form Block -->
+
+              <div class="form-row justify-content-md-center">
+                <div class="col-md-12 text-center">
+                  <a class="btn gray-btn mb-3" href="#!" title="BACK">BACK</a>
+                  <a class="btn yellow-btn mb-3" href="#!" title="エントリーする">エントリーする</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Col 12 -->
+      </div>
+      <!-- End Modal Body -->
+
+    </div>
+  </div>
+</div>
+<!--=================================
+Modal Popup -->
+
+<!--=================================
+Javascript -->
+
+    <!-- JS Global Compulsory (Do not remove)-->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper/popper.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+    <script src="../js/select2/select2.full.js"></script>
+
+    <!-- Template Scripts (Do not remove)-->
+    <script src="../js/custom.js"></script>
+
+</body>
+</html>

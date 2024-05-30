@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DXA-3B.2 - Company data detail (Account info) - EDIT status – 1</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../css/font-awesome/all.min.css">
+
+  <!-- Ionicons -->
+  <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../css/select2/select2.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../css/adminlte/adminlte.min.css">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- Admin Custom Style -->
+  <link rel="stylesheet" href="../css/admin-custom.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <a class="nav-link menu-btn" data-widget="pushmenu" href="#!" role="button"><i class="fas fa-bars"></i></a>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-user-cog"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          ユーザー名 <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="#!" class="brand-link">
+      <img src="../img/logo-branch-image.png" alt="Logo PrimeDX Image" class="brand-image">
+      <img src="../img/logo-branch-text.png" alt="Logo PrimeDX Text" class="brand-text">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#!" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>求職者データ管理</p>
+            </a>            
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#!" class="nav-link">
+              <i class="nav-icon fas fa-building"></i>
+              <p>求人企業データ管理</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-ul"></i>
+              <p>求人案件管理</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>ニュース管理 <i class="fas fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#!" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dropdown 01</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dropdown 02</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-4">
+          <div class="col-sm-7 col-md-8 title-block">
+            <h1 class="main-title">求人企業データ管理</h1>
+            <h5 class="main-sub-title">アカウント情報 <span>株式会社 ABCD</span></h5>
+          </div>
+          <div class="col-sm-5 col-md-4">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#!">求職者データ管理</a></li>
+              <li class="breadcrumb-item active">アカウント情報</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- End Content Header (Page header) -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Tab Button -->
+            <div class="tab_btn">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="checking-tab" data-toggle="tab" href="#checking" role="tab" aria-controls="checking" aria-selected="true">閲覧</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="edit-tab" data-toggle="tab" href="#edit" role="tab" aria-controls="edit" aria-selected="false">編集</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="note-tab" data-toggle="tab" href="#note" role="tab" aria-controls="note" aria-selected="false">メモ</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Tab Button -->
+
+            <!-- Tab Content -->
+            <div class="bg_container tab-content">
+              <!-- Tab 01: Checking Tab -->
+              <div class="tab-pane" id="checking" role="tabpanel" aria-labelledby="checking-tab"></div>
+              <!-- End Tab 01: Checking Tab -->
+
+              <!-- Tab 02: Edit Tab -->
+              <div class="tab-pane active" id="edit" role="tabpanel" aria-labelledby="edit-tab">
+                <form class="user-data-frm form_comp" role="form">
+                  <!-- Form status-->
+                  <div class="row form_status">
+                    <!-- col 04 -->
+                    <div class="col-6 col-sm-6 col-md-3">
+                      <div class="form-group custom-select2">
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">アクティブ</option>
+                          <option value="">未確定</option>
+                          <option value="">禁止</option>
+                        </select>
+                      </div>                  
+                    </div>
+                    <!-- End col 04 -->
+                    <!-- col 03 -->
+                    <div class="col-6 col-sm-6 col-md-2">
+                      <div class="form-group custom-select2">
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">ON</option>
+                          <option value="">OFF</option>
+                        </select>
+                      </div>                  
+                    </div>
+                    <!-- End col 03 -->
+                    <!-- col 07 -->
+                    <div class="col-sm-12 col-md-7 text-right">
+                      <div class="form-group">
+                        <button class="btn blue-btn mgr-15" type="button">編集を保存</button>
+                        <button class="btn trans-btn" type="button">リセット</button>
+                      </div>
+                    </div>
+                    <!-- End col 07 -->
+                  </div>
+                  <!-- End Form status-->
+    
+                  <!-- General Form -->
+                  <div class="card card-warning">
+                    <div class="card-body">
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="id">ID</label>
+                            <input id="id" type="text" class="form-control" placeholder="ABCDdsfaf">
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="created_date">作成日</label>
+                            <div class="input-group date" id="created_date" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#created_date" placeholder="YYYY/MM/DD">
+                              <div class="input-group-append" data-target="#created_date" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 12 -->
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="namecompany">企業名</label>
+                            <div class="input-group">
+                              <input id="namecompany" type="text" class="form-control" placeholder="株式会社 ABCD">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-archway"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 12 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="perchar">ご担当者氏名</label>                        
+                            <div class="input-group">
+                              <input id="perchar" type="text" class="form-control" placeholder="山田太郎">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-file-signature"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="percharfuri">ご担当者氏名 ふりがな</label>                        
+                            <div class="input-group">
+                              <input id="percharfuri" type="text" class="form-control" placeholder="やまだ たろう">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-file-signature"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="depchar">ご担当者部署</label>
+                            <div class="input-group">
+                              <input id="depchar" type="text" class="form-control" placeholder="山田太郎">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-chalkboard-teacher"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="phone">ご担当者電話番号</label>
+                            <div class="input-group">
+                              <input id="phone" type="text" class="form-control" placeholder="000-000-0000">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 12 -->
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <div class="input-group">
+                              <input id="email" type="text" class="form-control" placeholder="abcdef@website.com">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 12 -->
+                      </div>
+                      <!-- End Row -->
+    
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- End General Form -->
+    
+                   <!-- General Form -->
+                   <div class="card card-warning">
+                    <div class="card-body">
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 12 -->
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="reprename">代表者名</label>
+                            <div class="input-group">
+                              <input id="reprename" type="text" class="form-control" placeholder="山田太郎">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-file-signature"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 12 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 12 -->
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="corpurl">コーポレートURL</label>
+                            <div class="input-group">
+                              <input id="corpurl" type="text" class="form-control" placeholder="https://company-abcd.co.jp">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-link"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 12 -->
+                      </div>
+                      <!-- End Row -->
+    
+                       <!-- Row -->
+                       <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="postcode">郵便番号</label>
+                            <div class="input-group">
+                              <input id="postcode" type="text" class="form-control" placeholder="000 - 0000">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-shipping-fast"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="prefectu">都道府県</label>
+                            <select class="form-control select2" style="width: 100%;">
+                              <option selected="selected">option 01</option>
+                              <option value="">option 02</option>
+                              <option value="">option 03</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="munici">市区町村</label>
+                            <div class="input-group">
+                              <input id="munici" type="text" class="form-control" placeholder="港区南青山３丁目８−４０">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-city"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="addbuil">番地・建物名</label>
+                            <div class="input-group">
+                              <input id="addbuil" type="text" class="form-control" placeholder="青山センタービル2F　20号室">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-map-marker-alt"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="created_date2">設立年月</label>
+                            <div class="input-group date" id="created_date2" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#created_date2" placeholder="YYYY/MM/DD">
+                              <div class="input-group-append" data-target="#created_date2" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="capit">資本金 </label>
+                            <div class="input-group">
+                              <input id="capit" type="text" class="form-control" placeholder="300万円以上">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-torii-gate"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="eestayea">設立年月</label>
+                            <div class="input-group">
+                              <input id="eestayea" type="text" class="form-control" placeholder="50名">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-torah"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+    
+                        <!-- Col 06 -->
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <label for="amfals">売上高</label>
+                            <div class="input-group">
+                              <input id="amfals" type="text" class="form-control" placeholder="300万円以上">
+                              <div class="input-group-append">
+                                <div class="input-group-text"><i class="fa fa-project-diagram"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Col 06 -->
+                      </div>
+                      <!-- End Row -->
+    
+                      <!-- Row -->
+                      <div class="row">
+                        <!-- Col 12 -->
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="compintro">自社紹介 <i class="fa fa-university"></i></label>
+                            <textarea class="form-control" id="compintro" rows="7" placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."></textarea>
+                          </div>
+                        </div>
+                        <!-- End Col 12 -->
+                      </div>
+                      <!-- End Row -->
+    
+    
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- End General Form -->
+                  <div class="custom_btn text-center">
+                    <button type="button" class="btn blue-btn">編集を保存</button>
+                    <button type="button" class="btn trans-btn">リセット</button>
+                  </div>
+                  
+                  </form>
+              </div>
+              <!-- End Tab 02: Edit Tab -->
+
+              <!-- Tab 03: Note Tab -->
+              <div class="tab-pane" id="note" role="tabpanel" aria-labelledby="note-tab"></div>
+              <!-- End Tab 03: Note Tab -->
+              
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-sm-block">
+      &copy; Copyright 2020 <a href="https://primestyle.co.jp/" title="Primegroup" target="_blank">Primegroup</a>. All Rights Reserved
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<!-- Bootstrap 4 -->
+<script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../js/select2/select2.full.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../js/adminlte/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2();
+
+    $('#created_date, #birthday').datetimepicker({
+      format: 'L',
+      locale: 'ja'
+    });
+  });
+</script>
+</body>
+</html>

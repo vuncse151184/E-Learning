@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DXA-3A - Company data list management – 1</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../css/font-awesome/all.min.css">
+
+  <!-- Ionicons -->
+  <!-- <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../css/select2/select2.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../css/adminlte/adminlte.min.css">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- Admin Custom Style -->
+  <link rel="stylesheet" href="../css/admin-custom.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <a class="nav-link menu-btn" data-widget="pushmenu" href="#!" role="button"><i class="fas fa-bars"></i></a>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-user-cog"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!-- <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3"> -->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          ユーザー名 <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <a href="#!" class="brand-link">
+      <img src="../img/logo-branch-image.png" alt="Logo PrimeDX Image" class="brand-image">
+      <img src="../img/logo-branch-text.png" alt="Logo PrimeDX Text" class="brand-text">
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview">
+            <a href="#!" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>求職者データ管理</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#!" class="nav-link">
+              <i class="nav-icon fas fa-building"></i>
+              <p>求人企業データ管理</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-ul"></i>
+              <p>求人案件管理</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>ニュース管理 <i class="fas fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#!" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dropdown 01</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dropdown 02</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-md-12 title-block">
+            <h1 class="main-title">求人企業データ管理</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- End Content Header (Page header) -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <!-- Form -->
+                <form class="col-md-12 form-inline job-seeker-frm">
+                  <!-- Form Group -->
+                  <div class="form-group row col-md-3 status-input">
+                    <label for="status" class="col-md-6 col-form-label">ステイタス</label>
+                    <div class="col-md-6">
+                      <select id="status" class="form-control select2" style="width: 100%;">
+                        <option selected="selected">すべて</option>
+                        <option>アクティブ</option>
+                        <option>未確定</option>
+                        <option>禁止</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="form-group row col-md-7 date-input">
+                    <label for="created_date" class="col-md-3 col-form-label">作成日</label>
+                    <div class="col-md-9 row">
+                      <div class="input-group date col-md-5" id="created_date_from" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#created_date_from" placeholder="2020/09/09">
+                        <div class="input-group-append" data-target="#created_date_from" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                        </div>
+                      </div>
+                      <span class="col-md-1 separate-icon">~</span>
+                      <div class="input-group date col-md-5" id="created_date_to" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#created_date_to" placeholder="2020/09/09">
+                        <div class="input-group-append" data-target="#created_date_to" data-toggle="datetimepicker">
+                          <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="form-group row col-md-2 search-input">
+                    <div class="col-md-12">
+                      <div class="input-group" style="width: 100%;">
+                        <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+    
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-default" style="min-width: 50px;"><i class="fas fa-search"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+                </form>
+                <!-- Form -->
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive">
+                <table class="table table-hover text-nowrap job-seeker-tbl">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>会社名</th>
+                      <th>メールアドレス</th>
+                      <th>作成日</th>
+                      <th>ステータス</th>
+                      <th>HOT</th>
+                      <th>アクション</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>yamada123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>アクティブ</td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch" checked="">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>johndoe123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>
+                        <p class="red-txt m-0">NG <i class="fas fa-ban"></i></p>
+                      </td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>yamada123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>アクティブ</td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch" checked="">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>johndoe123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>
+                        <p class="red-txt m-0">NG <i class="fas fa-ban"></i></p>
+                      </td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>yamada123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>アクティブ</td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch" checked="">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>johndoe123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>
+                        <p class="red-txt m-0">NG <i class="fas fa-ban"></i></p>
+                      </td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>yamada123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>アクティブ</td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch" checked="">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>johndoe123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>
+                        <p class="red-txt m-0">NG <i class="fas fa-ban"></i></p>
+                      </td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>yamada123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>アクティブ</td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch" checked="">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1234abcd</td>
+                      <td>
+                        <a href="#!" title="株式会社 ABCD">株式会社 ABCD</a>
+                      </td>
+                      <td>johndoe123@email.co.jp</td>
+                      <td>yyyy/mm/dd</td>
+                      <td>
+                        <p class="red-txt m-0">NG <i class="fas fa-ban"></i></p>
+                      </td>
+                      <td>
+                        <label class="el_custom_switch">
+                          <input type="checkbox" name="switch">
+                          <span class="el_switch_style"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <button class="active-btn"><i class="fas fa-pencil-alt"></i></button>
+                        <button class="active-btn"><i class="far fa-file-alt"></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+
+              <div class="card-footer">
+                <!-- Pagination -->
+                <div class="pagination-block">
+                  <ul class="pagination">
+                      <li class="page-item">
+                          <a class="page-link" href="#!">
+                              <i class="fas fa-fast-backward"></i>
+                          </a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link" href="#!">
+                              <i class="fas fa-angle-double-left"></i>
+                          </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#!">25</a></li>
+                      <li class="page-item">
+                          <a class="page-link" href="#!">
+                              <i class="fas fa-angle-double-right"></i>
+                          </a>
+                      </li>
+                      <li class="page-item">
+                          <a class="page-link" href="#!">
+                              <i class="fas fa-fast-forward"></i>
+                          </a>
+                      </li>
+                  </ul>
+                </div>
+                <!-- End Pagination -->
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-sm-block">
+      &copy; Copyright 2020 <a href="https://primestyle.co.jp/" title="Primegroup" target="_blank">Primegroup</a>. All Rights Reserved
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<!-- Bootstrap 4 -->
+<script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../js/select2/select2.full.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../js/adminlte/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../js/demo.js"></script>
+
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2();
+
+    $('#created_date_from, #created_date_to').datetimepicker({
+      format: 'L',
+      locale: 'ja'
+    });
+  });
+</script>
+</body>
+</html>
